@@ -36,5 +36,20 @@ export const ExamplePosts: Post[] = [
         selectedImg: 0,
         userHasLiked: false,
         userHasDisliked: false,
+    },
+    {
+        imgs: [],
+        description: "Se busca border collie para cruzar, interesados al md",
+        likes: 0,
+        dislikes: 0,
+        comments: [],
+        postCreator: {
+            friends: 0,
+            name: "Juan Perez",
+            img: juan
+        },
+        selectedImg: 0,
+        userHasLiked: false,
+        userHasDisliked: false,
     }
 ]

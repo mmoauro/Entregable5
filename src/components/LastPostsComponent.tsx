@@ -1,6 +1,6 @@
 import React from "react";
 import {ExamplePosts, Post} from "../model/Post";
-import comment from '../assets/comment.png';
+import comment from '../assets/icons/comment.png';
 import {Button} from "react-bootstrap";
 import {LikeIcon} from "./LikeIcon";
 import {CommentComponent} from "./CommentComponent";
@@ -23,7 +23,7 @@ export class LastPostsComponent extends React.Component<any, State> {
         this.setState({posts: posts});
     }
 
-    setUserHasLiked (post: Post) {
+    setUserHasLiked(post: Post) {
         const posts = [...this.state.posts];
         post.userHasLiked = !post.userHasLiked;
         post.userHasLiked ? post.likes++ : post.likes--;
@@ -35,7 +35,7 @@ export class LastPostsComponent extends React.Component<any, State> {
         this.setState({posts: posts});
     }
 
-    setUserHasDisliked (post: Post) {
+    setUserHasDisliked(post: Post) {
         const posts = [...this.state.posts];
         post.userHasDisliked = !post.dislikes;
         post.userHasDisliked ? post.dislikes++ : post.dislikes--;
@@ -56,7 +56,8 @@ export class LastPostsComponent extends React.Component<any, State> {
                         {this.state.posts.map((post, index) => {
                             return (
                                 <>
-                                    <div style={{border: "1px solid black", borderRadius: "10px", padding: "20px"}}>
+                                    <div className={"mt-5"}
+                                         style={{border: "1px solid black", borderRadius: "10px", padding: "20px"}}>
                                         <div className={"d-flex align-items-center"}>
                                             <img src={post.postCreator.img} height={"50px"} width={"50px"}
                                                  style={{borderRadius: "50px"}}/>
@@ -85,11 +86,13 @@ export class LastPostsComponent extends React.Component<any, State> {
                                             })}
                                         </div>
                                         <div className={"d-flex"}>
-                                            <div style={{cursor:"pointer", width:"30px", marginRight:"10px"}} onClick={() => this.setUserHasLiked(post)}>
+                                            <div style={{cursor: "pointer", width: "30px", marginRight: "10px"}}
+                                                 onClick={() => this.setUserHasLiked(post)}>
                                                 <LikeIcon fill={post.userHasLiked ? "#D42DD8" : undefined}/>
                                                 <p>{post.likes}</p>
                                             </div>
-                                            <div style={{cursor:"pointer", width:"30px"}} onClick={() => this.setUserHasDisliked(post)}>
+                                            <div style={{cursor: "pointer", width: "30px"}}
+                                                 onClick={() => this.setUserHasDisliked(post)}>
                                                 <LikeIcon dislike fill={post.userHasDisliked ? "#D42DD8" : undefined}/>
                                                 <p>{post.dislikes}</p>
                                             </div>
@@ -105,7 +108,12 @@ export class LastPostsComponent extends React.Component<any, State> {
                                         <div className={"d-flex align-items-center"} style={{width: "100%"}}>
                                             <img src={comment} height={"20px"} width={"20px"}/>
                                             <input placeholder={"Agregar un comentario..."}
-                                                   style={{borderRadius: "50px", width:"100%"}}/>
+                                                   style={{
+                                                       borderRadius: "50px",
+                                                       width: "100%",
+                                                       marginLeft: "10px",
+                                                       marginRight: "10px"
+                                                   }}/>
                                             <Button style={{
                                                 borderColor: "#D42DD8",
                                                 borderRadius: "50px",
