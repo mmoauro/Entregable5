@@ -1,13 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter, Route, Switch} from 'react-router-dom'
 import {LoginForm} from './LoginForm';
 import {Home} from "./Home";
 
 
 function App() {
     return (
-        <Router>
+        <HashRouter>
             <Switch>
                 <Route path="/login">
                     <LoginForm/>
@@ -17,7 +17,7 @@ function App() {
                 </Route>
 
             </Switch>
-        </Router>
+        </HashRouter>
     );
 }
 
