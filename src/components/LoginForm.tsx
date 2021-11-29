@@ -3,6 +3,7 @@ import {Button, Col, Modal, Row} from "react-bootstrap";
 import logo from '../assets/form-dogs.png';
 import inputDog from '../assets/input-dog.png';
 import {SignupForm} from "./SignupForm";
+import { Link } from "react-router-dom";
 
 interface State {
     showSignupModal: boolean;
@@ -61,7 +62,9 @@ export class LoginForm extends React.Component<{}, State> {
                                 </Row>
                                 <Row className="d-flex justify-content-center mt-3">
                                     <Col md={"10"}>
+                                    <Link to="/">
                                         <Button style={{width: "100%", borderRadius: "10px"}}>Iniciar sesion</Button>
+                                    </Link>
                                     </Col>
                                     <Col md={"10"} className={"mt-3 d-flex justify-content-center"}>
                                         <p style={{color: "#63C7FF", cursor: "pointer"}}>¿Olvidaste tu contraseña?</p>

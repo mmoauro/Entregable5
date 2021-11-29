@@ -1,5 +1,6 @@
 import React from "react";
-import {Button, Col, Row} from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export class SignupForm extends React.Component<any, any> {
 
@@ -12,7 +13,7 @@ export class SignupForm extends React.Component<any, any> {
                         <input
                             type="text"
                             placeholder="Nombre"
-                            style={{border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px"}}
+                            style={{ border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px" }}
                         />
                     </Col>
                     <Col md="10" className={"mt-3"}>
@@ -20,7 +21,7 @@ export class SignupForm extends React.Component<any, any> {
                         <input
                             type="text"
                             placeholder="Apellido"
-                            style={{border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px"}}
+                            style={{ border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px" }}
                         />
                     </Col>
                     <Col md="10" className={"mt-3"}>
@@ -28,23 +29,25 @@ export class SignupForm extends React.Component<any, any> {
                         <input
                             type="text"
                             placeholder="Correo electronico"
-                            style={{border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px"}}
+                            style={{ border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px" }}
                         />
                     </Col>
                     <Col md="10" className={"mt-3"}>
-                        <label>Contrasena</label>
+                        <label>Contraseña</label>
                         <input
                             type="password"
-                            placeholder="Contrasena"
-                            style={{border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px"}}
+                            placeholder="Contraseña"
+                            style={{ border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px" }}
                         />
                     </Col>
 
                 </Row>
                 <Row className="d-flex justify-content-center mt-3">
                     <Col md={"10"} className={"d-flex justify-content-center mb-3"}>
-                        <Button style={{borderColor: "#D42DD8", borderRadius: "10px", backgroundColor: "#D42DD8"}}
-                                onClick={() => this.setState({showSignupModal: false})}>Registrarse</Button>
+                        <Link to="/">
+                            <Button style={{ borderColor: "#D42DD8", borderRadius: "10px", backgroundColor: "#D42DD8" }}
+                                onClick={() => this.setState({ showSignupModal: false })}>Registrarse</Button>
+                        </Link>
                     </Col>
                 </Row>
             </form>
