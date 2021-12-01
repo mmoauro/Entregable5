@@ -3,8 +3,17 @@ import {Col, Row} from "react-bootstrap";
 import {PublicidadComponent} from "./PublicidadComponent";
 import {RecommendedUsers} from "./RecommendedUsers";
 import {LastPostsComponent} from "./LastPostsComponent";
+import { SearchComponent } from "./SearchComponent";
 
-export class Home extends React.Component<any, any> {
+interface Props {
+    isSearchPage?: boolean;
+}
+
+export class Home extends React.Component<Props, any> {
+
+    constructor(props: Props) {
+        super(props);
+    }
 
     render() {
         return (
@@ -14,7 +23,11 @@ export class Home extends React.Component<any, any> {
                         <PublicidadComponent/>
                     </Col>
                     <Col md={6}>
-                        <LastPostsComponent/>
+                        { this.props.isSearchPage ? 
+                            <SearchComponent/>
+                            :    
+                            <LastPostsComponent/>
+                        }
                     </Col>
                     <Col md={3}>
                         <RecommendedUsers/>

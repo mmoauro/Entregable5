@@ -63,8 +63,11 @@ export class LastPostsComponent extends React.Component<any, State> {
                                                  style={{borderRadius: "50px"}}/>
                                             <p className={"m-lg-3"}>{post.postCreator.name}</p>
                                         </div>
-                                        <img src={post.imgs[post.selectedImg]}
-                                             style={{maxWidth: "100%", maxHeight: "100%"}}/>
+                                        {post.imgs.length > 0 && 
+                                            <img src={post.imgs[post.selectedImg]}
+                                                style={{width: "100%", height: "500px"}}/>
+                                        }
+
                                         <div className={"d-flex justify-content-center mt-2"}>
                                             {post.imgs.map((img, i) => {
                                                 return (

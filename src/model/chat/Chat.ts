@@ -37,6 +37,36 @@ export const DefaultChats: Chat[] = [
                 author: false,
                 text: "Hola, como estas? Te consulto por tu publicacion sobre la cruza con un border collie. Tengo un macho de 9 meses",
                 time: "17:46"
+            },
+            {
+                author: false,
+                text: "Gracias a vos! Consultame cualquier cosa",
+                time: "13:46"
+            },
+            {
+                author: false,
+                text: "Gracias a vos! Consultame cualquier cosa",
+                time: "13:46"
+            },
+            {
+                author: false,
+                text: "Gracias a vos! Consultame cualquier cosa",
+                time: "13:46"
+            },
+            {
+                author: false,
+                text: "Gracias a vos! Consultame cualquier cosa",
+                time: "13:46"
+            },
+            {
+                author: false,
+                text: "Gracias a vos! Consultame cualquier cosa",
+                time: "13:46"
+            },
+            {
+                author: false,
+                text: "Gracias a vos! Consultame cualquier cosa",
+                time: "13:46"
             }
         ]
     },
@@ -109,6 +139,63 @@ export const DefaultChats: Chat[] = [
                 author: true,
                 text: "A eso de las 18 paso, gracias!",
                 time: "17:06"
+            }
+        ]
+    },
+    {
+        user: {
+            name: "Roberto Moauro",
+            friends: 0,
+            img: robert
+        },
+        messages: [
+            {
+                author: true,
+                text: "Roberto tenes idea acerca de si ya puedo castrar a mi perro?",
+                time: "13:32"
+            },
+            {
+                author: false,
+                text: "No, no sabria decirte, escribile a la veterinaria patitas felices",
+                time: "14:00"
+            }
+        ]
+    },
+    {
+        user: {
+            name: "Roberto Moauro",
+            friends: 0,
+            img: robert
+        },
+        messages: [
+            {
+                author: true,
+                text: "Roberto tenes idea acerca de si ya puedo castrar a mi perro?",
+                time: "13:32"
+            },
+            {
+                author: false,
+                text: "No, no sabria decirte, escribile a la veterinaria patitas felices",
+                time: "14:00"
+            }
+        ]
+    },
+    {
+        user: {
+            name: "Roberto Moauro",
+            friends: 0,
+            img: robert
+        },
+        messages: [
+            {
+                author: true,
+                text: "Roberto tenes idea acerca de si ya puedo castrar a mi perro?",
+                time: "13:32"
+            },
+            {
+                author: false,
+                text: "No, no sabria decirte, escribile a la veterinaria patitas felices",
+                time: "14:00"
             }
         ]
     },

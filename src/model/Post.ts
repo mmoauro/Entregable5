@@ -2,7 +2,7 @@ import {Comment} from "./Comment";
 import {RecommendedUser} from "./RecommendedUser";
 import juan from '../assets/juan.jpeg';
 import gato from '../assets/gato.jpg';
-import gato2 from '../assets/gato2.jpeg';
+import gato2 from '../assets/gato2.png';
 
 export interface Post {
     imgs: string[];

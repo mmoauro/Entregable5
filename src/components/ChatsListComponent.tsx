@@ -32,7 +32,7 @@ export class ChatsListComponent extends React.Component<any, State> {
             <>
                 <div>
                     <Row>
-                        <Col md={3} style={{paddingRight: "0px"}}>
+                        <Col md={3} style={{paddingRight: "0px", overflow:"scroll", maxHeight:"800px"}}>
                             <div>
                                 {this.state.chats.map((chat, index) => {
                                     return (

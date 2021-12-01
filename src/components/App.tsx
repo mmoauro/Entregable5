@@ -20,6 +20,9 @@ function App() {
                     <Route path="/chats">
                         <ChatsListComponent/>
                     </Route>
+                    <Route path="/search">
+                        <Home isSearchPage/>
+                    </Route>
                     <Route path="/">
                         <Home/>
                     </Route>
