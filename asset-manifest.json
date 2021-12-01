@@ -1,24 +1,32 @@
 {
   "files": {
-    "main.js": "/Entregable5/static/js/main.e9b085e6.chunk.js",
-    "main.js.map": "/Entregable5/static/js/main.e9b085e6.chunk.js.map",
+    "main.js": "/Entregable5/static/js/main.95db7779.chunk.js",
+    "main.js.map": "/Entregable5/static/js/main.95db7779.chunk.js.map",
     "runtime-main.js": "/Entregable5/static/js/runtime-main.afc50b05.js",
     "runtime-main.js.map": "/Entregable5/static/js/runtime-main.afc50b05.js.map",
     "static/css/2.383c0125.chunk.css": "/Entregable5/static/css/2.383c0125.chunk.css",
-    "static/js/2.115158a8.chunk.js": "/Entregable5/static/js/2.115158a8.chunk.js",
-    "static/js/2.115158a8.chunk.js.map": "/Entregable5/static/js/2.115158a8.chunk.js.map",
+    "static/js/2.7f8eb38c.chunk.js": "/Entregable5/static/js/2.7f8eb38c.chunk.js",
+    "static/js/2.7f8eb38c.chunk.js.map": "/Entregable5/static/js/2.7f8eb38c.chunk.js.map",
     "index.html": "/Entregable5/index.html",
     "static/css/2.383c0125.chunk.css.map": "/Entregable5/static/css/2.383c0125.chunk.css.map",
-    "static/js/2.115158a8.chunk.js.LICENSE.txt": "/Entregable5/static/js/2.115158a8.chunk.js.LICENSE.txt",
+    "static/js/2.7f8eb38c.chunk.js.LICENSE.txt": "/Entregable5/static/js/2.7f8eb38c.chunk.js.LICENSE.txt",
     "static/media/account.88c6d284.png": "/Entregable5/static/media/account.88c6d284.png",
     "static/media/cesar.9ff09861.jpeg": "/Entregable5/static/media/cesar.9ff09861.jpeg",
+    "static/media/clip.271dadac.png": "/Entregable5/static/media/clip.271dadac.png",
     "static/media/comment.9cc70a70.png": "/Entregable5/static/media/comment.9cc70a70.png",
     "static/media/dee.7f34e92d.jpeg": "/Entregable5/static/media/dee.7f34e92d.jpeg",
+    "static/media/face.60d3e35c.png": "/Entregable5/static/media/face.60d3e35c.png",
     "static/media/form-dogs.b772da30.png": "/Entregable5/static/media/form-dogs.b772da30.png",
     "static/media/gato.ffc8742d.jpg": "/Entregable5/static/media/gato.ffc8742d.jpg",
+    "static/media/gato2.54fb192e.png": "/Entregable5/static/media/gato2.54fb192e.png",
     "static/media/gatti.3f979c86.jpeg": "/Entregable5/static/media/gatti.3f979c86.jpeg",
     "static/media/input-dog.44f5dad7.png": "/Entregable5/static/media/input-dog.44f5dad7.png",
-    "static/media/juan.64efa1dc.jpeg": "/Entregable5/static/media/juan.64efa1dc.jpeg",
+    "static/media/juan.3d7bab97.jpeg": "/Entregable5/static/media/juan.3d7bab97.jpeg",
+    "static/media/location.d2e588c5.png": "/Entregable5/static/media/location.d2e588c5.png",
+    "static/media/lupa.23b6707c.png": "/Entregable5/static/media/lupa.23b6707c.png",
+    "static/media/manuel1.9e2872ea.webp": "/Entregable5/static/media/manuel1.9e2872ea.webp",
+    "static/media/manuel2.5332201e.jpeg": "/Entregable5/static/media/manuel2.5332201e.jpeg",
+    "static/media/manuel3.e7b1e755.jpeg": "/Entregable5/static/media/manuel3.e7b1e755.jpeg",
     "static/media/patitas.d775a074.jpeg": "/Entregable5/static/media/patitas.d775a074.jpeg",
     "static/media/paula.afc98107.jpeg": "/Entregable5/static/media/paula.afc98107.jpeg",
     "static/media/ramon.d4cd64ad.jpeg": "/Entregable5/static/media/ramon.d4cd64ad.jpeg",
@@ -29,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.afc50b05.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.115158a8.chunk.js",
-    "static/js/main.e9b085e6.chunk.js"
+    "static/js/2.7f8eb38c.chunk.js",
+    "static/js/main.95db7779.chunk.js"
   ]
 }
