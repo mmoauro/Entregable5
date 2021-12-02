@@ -9,7 +9,12 @@ interface State {
 
 }
 
-export class ChatsListComponent extends React.Component<any, State> {
+interface Props {
+    toggleSpinner: (boolean: boolean) => void,
+    showingSpinner: boolean;
+}
+
+export class ChatsListComponent extends React.Component<Props, State> {
 
     constructor(props: any) {
         super(props);
@@ -17,6 +22,10 @@ export class ChatsListComponent extends React.Component<any, State> {
             chats: DefaultChats,
             selectedChat: DefaultChats[0]
         };
+        this.props.toggleSpinner(true);
+        setTimeout(() => {
+            this.props.toggleSpinner(false);
+        }, 500);
     }
 
     getLastMessage(chat: Chat) {
@@ -29,6 +38,7 @@ export class ChatsListComponent extends React.Component<any, State> {
 
     render() {
         return (
+            !this.props.showingSpinner &&
             <>
                 <div>
                     <Row>

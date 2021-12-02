@@ -1,10 +1,13 @@
 import { Message } from "./Message";
 import { RecommendedUser } from "../RecommendedUser";
-import ramon from '../../assets/ramon.jpeg';
+import ramon from "../../assets/ramon.jpeg";
 import diego from '../../assets/diego.jpeg';
 import paula from '../../assets/paula.jpeg';
 import patitas from '../../assets/patitas.jpeg';
 import robert from '../../assets/robert.jpeg';
+import enrique from '../../assets/enrique.jpeg';
+import sabrina from '../../assets/sabrina.jpeg';
+import drperez from '../../assets/drperez.jpeg';
 export interface Chat {
     user: RecommendedUser;
     messages: Message[];
@@ -39,34 +42,34 @@ export const DefaultChats: Chat[] = [
                 time: "17:46"
             },
             {
-                author: false,
-                text: "Gracias a vos! Consultame cualquier cosa",
-                time: "13:46"
+                author: true,
+                text: "Como andas?? Decime si tiene la libreta de vacuncación completa por favor",
+                time: "17:55"
+            },
+            {
+                author: true,
+                text: "Es raza pura??",
+                time: "17:55"
             },
             {
                 author: false,
-                text: "Gracias a vos! Consultame cualquier cosa",
-                time: "13:46"
+                text: "Si, tiene el plan de vacunación completo, es raza pura, tengo comprobantes del criadero si es necesario que los veas :)",
+                time: "18:06"
+            },
+            {
+                author: true,
+                text: "Buenisimo, mejor asi, no es necesario te creo jaja, cuando mi perrita esté en celo coordinamos te parece?",
+                time: "18:07"
             },
             {
                 author: false,
-                text: "Gracias a vos! Consultame cualquier cosa",
-                time: "13:46"
+                text: "Me parece genial, vos avisame, estamos hablando",
+                time: "18:07"
             },
             {
-                author: false,
-                text: "Gracias a vos! Consultame cualquier cosa",
-                time: "13:46"
-            },
-            {
-                author: false,
-                text: "Gracias a vos! Consultame cualquier cosa",
-                time: "13:46"
-            },
-            {
-                author: false,
-                text: "Gracias a vos! Consultame cualquier cosa",
-                time: "13:46"
+                author: true,
+                text: "Abrazo Ramon, hasta luego!",
+                time: "18:16"
             }
         ]
     },
@@ -163,58 +166,58 @@ export const DefaultChats: Chat[] = [
     },
     {
         user: {
-            name: "Roberto Moauro",
+            name: "Enrique Nuñez",
             friends: 0,
-            img: robert
+            img: enrique
         },
         messages: [
             {
                 author: true,
-                text: "Roberto tenes idea acerca de si ya puedo castrar a mi perro?",
-                time: "13:32"
+                text: "Hola Enrique, podrás compartir mi publicación? El gatito debe encontrar su hogar",
+                time: "12:32"
             },
             {
                 author: false,
-                text: "No, no sabria decirte, escribile a la veterinaria patitas felices",
-                time: "14:00"
+                text: "Si Juan, ahora la comparto, ojala tenga suerte, deben extrañarlo",
+                time: "12:35"
             }
         ]
     },
     {
         user: {
-            name: "Roberto Moauro",
+            name: "Sabrina Morales",
             friends: 0,
-            img: robert
+            img: sabrina
         },
         messages: [
             {
-                author: true,
-                text: "Roberto tenes idea acerca de si ya puedo castrar a mi perro?",
-                time: "13:32"
+                author: false,
+                text: "Hola Juan, creo que la gatita es de mi barrio, ahora comparto la publicación",
+                time: "11:32"
             },
             {
-                author: false,
-                text: "No, no sabria decirte, escribile a la veterinaria patitas felices",
-                time: "14:00"
+                author: true,
+                text: "Gracias Sabrina, ojalá encuentre a su dueño :(",
+                time: "11:44"
             }
         ]
     },
     {
         user: {
-            name: "Roberto Moauro",
+            name: "Doctor Perez",
             friends: 0,
-            img: robert
+            img: drperez
         },
         messages: [
             {
                 author: true,
-                text: "Roberto tenes idea acerca de si ya puedo castrar a mi perro?",
-                time: "13:32"
+                text: "Buen día doctor Perez, a que hora abre su consultorio?",
+                time: "09:32"
             },
             {
                 author: false,
-                text: "No, no sabria decirte, escribile a la veterinaria patitas felices",
-                time: "14:00"
+                text: "Buen dia, estamos abiertos de lunes a sabados de 8 a 18hs!",
+                time: "10:00"
             }
         ]
     }
