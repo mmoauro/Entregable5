@@ -1,11 +1,13 @@
-import { RecommendedUser } from "./RecommendedUser";
-import manuel1 from '../assets/manuel1.webp';
-import manuel2 from '../assets/manuel2.jpeg';
-import manuel3 from '../assets/manuel3.jpeg';
+import { RecommendedUser } from "../RecommendedUser";
+import manuel1 from '../../assets/manuel1.webp';
+import manuel2 from '../../assets/manuel2.jpeg';
+import manuel3 from '../../assets/manuel3.jpeg';
+import { SearchResultType } from "./SearchResultType";
 
 export interface SearchResult {
     user: RecommendedUser;
     city: string;
+    type: SearchResultType;
 }
 
 export const SearchResultExample: SearchResult[] = [
@@ -15,7 +17,8 @@ export const SearchResultExample: SearchResult[] = [
             friends: 840,
             img: manuel1
         },
-        city: "Tandil"
+        city: "Tandil",
+        type: SearchResultType.AMIGOS
     },
     {
         user: {
@@ -23,7 +26,8 @@ export const SearchResultExample: SearchResult[] = [
             friends: 1930,
             img: manuel2
         },
-        city: "Bahia Blanca"
+        city: "Bahia Blanca",
+        type: SearchResultType.AMIGOS
     },
     {
         user: {
@@ -31,6 +35,7 @@ export const SearchResultExample: SearchResult[] = [
             friends: 113,
             img: manuel3
         },
-        city: "Mar del plata"
+        city: "Mar del plata",
+        type: SearchResultType.PROFESIONALES
     }
 ]

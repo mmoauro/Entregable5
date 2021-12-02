@@ -1,14 +1,17 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SearchResult, SearchResultExample } from "../model/SearchResult";
+import { SearchResult, SearchResultExample } from "../model/search/SearchResult";
 import location from '../assets/icons/location.png';
 import Button from "@restart/ui/esm/Button";
+import { SearchResultType } from "../model/search/SearchResultType";
 
 interface State {
     selectedTab: number;
 }
 
 export class SearchComponent extends React.Component<any, State> {
+
+    types: SearchResultType[] = [SearchResultType.TODO, SearchResultType.AMIGOS, SearchResultType.PROFESIONALES];
 
     constructor(props: any) {
         super(props);
@@ -52,7 +55,7 @@ export class SearchComponent extends React.Component<any, State> {
                             <p>Profesionales</p>
                         </Col>
                     </Row>
-                    {this.results.map((result, index) => {
+                    {this.results.filter(res => res.type === this.types[this.state.selectedTab] || this.types[this.state.selectedTab] === SearchResultType.TODO).map((result, index) => {
                         return (
                             <>
                                 <Row key={index} style={{ borderBottom: "1px solid #D42DD8" }} className="p-2 m-0">
