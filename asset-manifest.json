@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.js": "/Entregable5/static/js/main.95db7779.chunk.js",
-    "main.js.map": "/Entregable5/static/js/main.95db7779.chunk.js.map",
+    "main.js": "/Entregable5/static/js/main.d522a631.chunk.js",
+    "main.js.map": "/Entregable5/static/js/main.d522a631.chunk.js.map",
     "runtime-main.js": "/Entregable5/static/js/runtime-main.afc50b05.js",
     "runtime-main.js.map": "/Entregable5/static/js/runtime-main.afc50b05.js.map",
     "static/css/2.383c0125.chunk.css": "/Entregable5/static/css/2.383c0125.chunk.css",
-    "static/js/2.7f8eb38c.chunk.js": "/Entregable5/static/js/2.7f8eb38c.chunk.js",
-    "static/js/2.7f8eb38c.chunk.js.map": "/Entregable5/static/js/2.7f8eb38c.chunk.js.map",
+    "static/js/2.2c373098.chunk.js": "/Entregable5/static/js/2.2c373098.chunk.js",
+    "static/js/2.2c373098.chunk.js.map": "/Entregable5/static/js/2.2c373098.chunk.js.map",
     "index.html": "/Entregable5/index.html",
     "static/css/2.383c0125.chunk.css.map": "/Entregable5/static/css/2.383c0125.chunk.css.map",
-    "static/js/2.7f8eb38c.chunk.js.LICENSE.txt": "/Entregable5/static/js/2.7f8eb38c.chunk.js.LICENSE.txt",
+    "static/js/2.2c373098.chunk.js.LICENSE.txt": "/Entregable5/static/js/2.2c373098.chunk.js.LICENSE.txt",
     "static/media/account.88c6d284.png": "/Entregable5/static/media/account.88c6d284.png",
     "static/media/cesar.9ff09861.jpeg": "/Entregable5/static/media/cesar.9ff09861.jpeg",
     "static/media/clip.271dadac.png": "/Entregable5/static/media/clip.271dadac.png",
     "static/media/comment.9cc70a70.png": "/Entregable5/static/media/comment.9cc70a70.png",
     "static/media/dee.7f34e92d.jpeg": "/Entregable5/static/media/dee.7f34e92d.jpeg",
+    "static/media/drperez.fa9c3890.jpeg": "/Entregable5/static/media/drperez.fa9c3890.jpeg",
+    "static/media/enrique.1747dc31.jpeg": "/Entregable5/static/media/enrique.1747dc31.jpeg",
     "static/media/face.60d3e35c.png": "/Entregable5/static/media/face.60d3e35c.png",
     "static/media/form-dogs.b772da30.png": "/Entregable5/static/media/form-dogs.b772da30.png",
     "static/media/gato.ffc8742d.jpg": "/Entregable5/static/media/gato.ffc8742d.jpg",
@@ -32,12 +34,13 @@
     "static/media/ramon.d4cd64ad.jpeg": "/Entregable5/static/media/ramon.d4cd64ad.jpeg",
     "static/media/robert.5fb8a84c.jpeg": "/Entregable5/static/media/robert.5fb8a84c.jpeg",
     "static/media/romero.aafaab62.jpeg": "/Entregable5/static/media/romero.aafaab62.jpeg",
+    "static/media/sabrina.a538b469.jpeg": "/Entregable5/static/media/sabrina.a538b469.jpeg",
     "static/media/sappia.cf7740b4.png": "/Entregable5/static/media/sappia.cf7740b4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.afc50b05.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.7f8eb38c.chunk.js",
-    "static/js/main.95db7779.chunk.js"
+    "static/js/2.2c373098.chunk.js",
+    "static/js/main.d522a631.chunk.js"
   ]
 }
