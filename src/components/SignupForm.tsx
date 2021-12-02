@@ -2,7 +2,14 @@ import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export class SignupForm extends React.Component<any, any> {
+interface Props {
+    toggleNavbar: (boolean: boolean) => void;
+}
+export class SignupForm extends React.Component<Props, any> {
+
+    constructor(props: Props) {
+        super(props);
+    }
 
     render() {
         return (
@@ -46,7 +53,13 @@ export class SignupForm extends React.Component<any, any> {
                     <Col md={"10"} className={"d-flex justify-content-center mb-3"}>
                         <Link to="/">
                             <Button style={{ borderColor: "#D42DD8", borderRadius: "10px", backgroundColor: "#D42DD8" }}
-                                onClick={() => this.setState({ showSignupModal: false })}>Registrarse</Button>
+                                onClick={() => {
+                                    this.setState({ showSignupModal: false })
+                                    this.props.toggleNavbar(true);
+                                }
+                                }>
+                                Registrarse
+                            </Button>
                         </Link>
                     </Col>
                 </Row>

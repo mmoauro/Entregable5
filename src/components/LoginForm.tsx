@@ -11,7 +11,8 @@ interface State {
 
 interface Props {
     toggleSpinner: (boolean: boolean) => void,
-    showingSpinner: boolean;
+    showingSpinner: boolean,
+    toggleNavbar: (boolean: boolean) => void
 }
 
 export class LoginForm extends React.Component<Props, State> {
@@ -23,6 +24,7 @@ export class LoginForm extends React.Component<Props, State> {
         setTimeout(() => {
             this.props.toggleSpinner(false);
         }, 500);
+        this.props.toggleNavbar(false);
     }
 
     render() {
@@ -73,7 +75,7 @@ export class LoginForm extends React.Component<Props, State> {
                                         <Row className="d-flex justify-content-center mt-3">
                                             <Col md={"10"}>
                                                 <Link to="/">
-                                                    <Button style={{ width: "100%", borderRadius: "10px" }}>Iniciar sesion</Button>
+                                                    <Button style={{ width: "100%", borderRadius: "10px" }} onClick={() => this.props.toggleNavbar(true)}>Iniciar sesion</Button>
                                                 </Link>
                                             </Col>
                                             <Col md={"10"} className={"mt-3 d-flex justify-content-center"}>
@@ -101,7 +103,9 @@ export class LoginForm extends React.Component<Props, State> {
                             <div>
                                 <h2 style={{ marginLeft: "70px", color: "#5E5C5C" }}>Registrate</h2>
                             </div>
-                            <SignupForm />
+                            <SignupForm
+                                toggleNavbar={(boolean: boolean) => this.props.toggleNavbar(boolean)}
+                            />
 
                         </Modal>
                     </>

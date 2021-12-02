@@ -10,10 +10,13 @@ import { Spinner } from '../components/utils/Spinner';
 
 function App() {
     const [showSpinner, setShowSpinner] = useState<boolean>(true);
+    const [showNavbar, setShowNavbar] = useState<boolean>(true);
     return (
         <>
             <HashRouter>
-                <Navbar />
+                {showNavbar &&
+                    <Navbar />
+                }
                 <div className="d-flex justify-content-center">
                     <Spinner show={showSpinner} />
                 </div>
@@ -22,6 +25,7 @@ function App() {
                         <LoginForm
                             toggleSpinner={(boolean) => setShowSpinner(boolean)}
                             showingSpinner={showSpinner}
+                            toggleNavbar={(boolean: boolean) => setShowNavbar(boolean)}
                         />
                     </Route>
                     <Route path="/chats">
