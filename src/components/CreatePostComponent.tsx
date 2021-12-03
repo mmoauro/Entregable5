@@ -14,8 +14,8 @@ export class CreatePostComponent extends React.Component<any, any> {
                     </div>
                     <Row className="mt-4">
                         <Col md="2" className="d-flex justify-content-end">
-                                <img src={face} width="30px" height="30px"/>
-                                <img src={clip} width="30px" height="30px"/>
+                                <img src={face} alt="emoji" width="30px" height="30px"/>
+                                <img src={clip} alt="clip" width="30px" height="30px"/>
                         </Col>
                         <Col className="d-flex justify-content-end" style={{marginRight: "8%"}}>
                             <Button style={{ backgroundColor: "#D42DD8", color: "white", borderRadius: "30px", border: "none", width: "20%", height: "40px" }}>Publicar</Button>

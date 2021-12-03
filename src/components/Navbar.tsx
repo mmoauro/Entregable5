@@ -23,14 +23,14 @@ export class Navbar extends React.Component<any, any> {
                     <Row>
                         <Col className="d-flex justify-content-around">
                             <Link to="/" style={{ textDecoration: "none" }}>
-                                <img src={home} width={"35px"} height={"35px"} />
+                                <img src={home} alt="home" width={"35px"} height={"35px"} />
                             </Link>
                             <Link to="/chats">
-                                <img src={chat} width={"35px"} height={"35px"} />
+                                <img src={chat} alt="chats" width={"35px"} height={"35px"} />
                             </Link>
-                            <img src={account} width={"35px"} height={"35px"} />
+                            <img src={account} alt="profile" width={"35px"} height={"35px"} />
                             <Link to="/login">
-                                <img src={logout} width={"35px"} height={"35px"} />
+                                <img src={logout} alt="logout" width={"35px"} height={"35px"} />
                             </Link>
                         </Col>
 
@@ -38,7 +38,7 @@ export class Navbar extends React.Component<any, any> {
                     <Row className="mt-3 d-flex justify-content-center p-2">
                         <div style={{ width: "100%", height: "30px" }} className={"d-flex justify-content-center"}>
                             <Link to="/search" style={{ position: "relative", left: "85%" }}>
-                                <img src={lupa} style={{ cursor: "pointer", height: "24px", top: "3px" }} />
+                                <img src={lupa} alt="lens" style={{ cursor: "pointer", height: "24px", top: "3px" }} />
                             </Link>
                             <input placeholder={"Buscar en Petbook"} style={{ borderRadius: "50px", width: "100%", height: "100%" }} />
                         </div>
@@ -51,16 +51,16 @@ export class Navbar extends React.Component<any, any> {
                         <Row>
                             <Col md="5" className="d-flex justify-content-around ">
                                 <Link to="/" style={{ textDecoration: "none" }}>
-                                    <img src={home} width={"35px"} height={"35px"} />
+                                    <img src={home} alt="home" width={"35px"} height={"35px"} />
                                 </Link>
                                 <Link to="/chats">
-                                    <img src={chat} width={"35px"} height={"35px"} />
+                                    <img src={chat} alt="chats" width={"35px"} height={"35px"} />
                                 </Link>
                             </Col>
                             <Col md="7">
                                 <div style={{ width: "100%", height: "30px" }} className={"d-flex justify-content-center"}>
                                     <Link to="/search" style={{ position: "relative", left: "85%" }}>
-                                        <img src={lupa} style={{ cursor: "pointer", height: "24px", top: "3px" }} />
+                                        <img src={lupa} alt="lens" style={{ cursor: "pointer", height: "24px", top: "3px" }} />
                                     </Link>
                                     <input placeholder={"Buscar en Petbook"} style={{ borderRadius: "50px", width: "100%", height: "100%" }} />
                                 </div>
@@ -77,12 +77,12 @@ export class Navbar extends React.Component<any, any> {
                         <Row>
                             <Row>
                                 <Col className="d-flex justify-content-end">
-                                    <img src={account} width={"35px"} height={"35px"} />
+                                    <img src={account} alt="profile" width={"35px"} height={"35px"} />
                                 </Col>
                                 <Col md={"2"}>
                                     <div>
                                         <Link to="/login">
-                                            <img src={logout} width={"35px"} height={"35px"} />
+                                            <img src={logout} alt="logout" width={"35px"} height={"35px"} />
                                         </Link>
                                     </div>
                                 </Col>

@@ -24,7 +24,7 @@ export class ChatComponent extends React.Component<Props, any> {
         return (
             <>
                 <div className="d-flex align-items-center" style={{borderBottom: "1px solid #564E57", padding:"20px", height:"136px"}}>
-                    <img src={this.props.chat.user.img} style={{width: "100px", height:"100px", borderRadius:"50px"}} />
+                    <img src={this.props.chat.user.img} alt="user" style={{width: "100px", height:"100px", borderRadius:"50px"}} />
                     <h3 style={{marginLeft: "20px"}}>{this.props.chat.user.name}</h3>
                 </div>
                 <div style={{paddingLeft: "20px", overflow:"scroll", maxHeight:"550px"}}>
@@ -52,8 +52,8 @@ export class ChatComponent extends React.Component<Props, any> {
                     <Row className="mt-3">
                         <Col md="3" className="d-flex justify-content-center">
                             <div>
-                                <img style={{marginRight:"30px"}} src={face} width="35px" height="35px"/>
-                                <img src={clip} width="35px" height="35px"/>
+                                <img style={{marginRight:"30px"}} alt="emoji" src={face} width="35px" height="35px"/>
+                                <img src={clip} width="35px"alt="clip" height="35px"/>
 
                             </div>
                         </Col>
@@ -61,7 +61,7 @@ export class ChatComponent extends React.Component<Props, any> {
                             <input placeholder="Escriba un  mensaje..." style={{borderRadius:"10px", width:"70%", height:"40px"}}/>
                         </Col>
                         <Col md="3" className="d-flex justify-content-end" style={{paddingRight:"5%"}}>
-                            <img src={send} width="35px" height="35px"/>
+                            <img src={send} alt="send" width="35px" height="35px"/>
                         </Col>
                     </Row>
                 </div>

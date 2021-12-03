@@ -58,7 +58,7 @@ export class ChatsListComponent extends React.Component<Props, State> {
                                                     backgroundColor: this.state.selectedChat === chat ? "#D8D9D9" : "" }}
                                                     onClick={() => this.setState({selectedChat: chat})}
                                                     >
-                                                <img src={chat.user.img} style={{ width: "60px", height: "60px", borderRadius: "50px" }} />
+                                                <img src={chat.user.img} alt="user" style={{ width: "60px", height: "60px", borderRadius: "50px" }} />
                                                 <div style={{ marginLeft: "10px", width: "100%" }} className={"d-flex align-items-center justify-content-between"}>
                                                     <div>
                                                         <p style={{ marginBottom: "2px" }}>{chat.user.name}</p>

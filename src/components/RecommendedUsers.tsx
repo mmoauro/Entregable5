@@ -35,7 +35,7 @@ export class RecommendedUsers extends React.Component<any, any> {
                         return (
                             <>
                                 <div key={index} className={"d-flex align-items-center"} style={{color: "#564E57"}}>
-                                    <img src={user.img} height={"50px"} width={"50px"} style={{borderRadius: "50px"}}/>
+                                    <img src={user.img} alt="recommendedUser" height={"50px"} width={"50px"} style={{borderRadius: "50px", cursor:"pointer"}}/>
                                     <div className={"m-lg-3"}>
                                         <p className={"mb-0"}>{user.name}</p>
                                         <p className={"mb-0"}>{user.friends} amigos</p>

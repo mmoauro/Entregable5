@@ -59,7 +59,7 @@ export class LastPostsComponent extends React.Component<any, State> {
                         <div className="d-flex justify-content-end align-items-center mt-2 mobile">
                             <p className="m-0" style={{color: "#858585"}}>Agregar publicacion</p>
                             <div style={{backgroundColor:"#D42DD8", opacity:"50%", width:"30px", height:"30px", marginLeft: "5px"}} className="d-flex justify-content-center align-items-center">
-                                <img src={add} height={"15px"} width={"15px"} />
+                                <img src={add} alt="add" height={"15px"} width={"15px"} />
                             </div>
                         </div>
                         {this.state.posts.map((post, index) => {
@@ -69,12 +69,12 @@ export class LastPostsComponent extends React.Component<any, State> {
                                         key={index}
                                          style={{border: "1px solid black", borderRadius: "10px", padding: "20px"}}>
                                         <div className={"d-flex align-items-center"}>
-                                            <img src={post.postCreator.img} height={"50px"} width={"50px"}
+                                            <img src={post.postCreator.img} alt="user" height={"50px"} width={"50px"}
                                                  style={{borderRadius: "50px"}}/>
                                             <p className={"m-lg-3"}>{post.postCreator.name}</p>
                                         </div>
                                         {post.imgs.length > 0 && 
-                                            <img src={post.imgs[post.selectedImg]}
+                                            <img src={post.imgs[post.selectedImg]} alt="postImage"
                                                 style={{width: "100%", height: "500px"}}/>
                                         }
 
@@ -99,6 +99,10 @@ export class LastPostsComponent extends React.Component<any, State> {
                                                 )
                                             })}
                                         </div>
+                                        {post.imgs.length === 0 &&
+                                            <p>{post.description}</p>
+                                        }
+
                                         <div className={"d-flex"}>
                                             <div style={{cursor: "pointer", width: "30px", marginRight: "10px"}}
                                                  onClick={() => this.setUserHasLiked(post)}>
@@ -111,8 +115,10 @@ export class LastPostsComponent extends React.Component<any, State> {
                                                 <p>{post.dislikes}</p>
                                             </div>
                                         </div>
+                                        {post.imgs.length > 0 &&
+                                            <p>{post.description}</p>
+                                        }
 
-                                        <p>{post.description}</p>
 
                                         {post.comments.map((comment, i) => {
                                             return (
@@ -120,7 +126,7 @@ export class LastPostsComponent extends React.Component<any, State> {
                                             )
                                         })}
                                         <div className={"d-flex align-items-center"} style={{width: "100%"}}>
-                                            <img src={comment} height={"20px"} width={"20px"}/>
+                                            <img src={comment} alt="commentBlob" height={"20px"} width={"20px"}/>
                                             <input placeholder={"Agregar un comentario..."}
                                                    style={{
                                                        borderRadius: "50px",

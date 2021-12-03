@@ -61,7 +61,7 @@ export class SearchComponent extends React.Component<any, State> {
                                 <Row key={index} style={{ borderBottom: "1px solid #D42DD8" }} className="p-2 m-0">
                                     <Col md="6" className="d-flex align-items-center">
                                         <div>
-                                            <img src={result.user.img} width="80px" height="80px" style={{ borderRadius: "50px", cursor: "pointer" }} />
+                                            <img src={result.user.img} alt="user" width="80px" height="80px" style={{ borderRadius: "50px", cursor: "pointer" }} />
                                         </div>
                                         <div style={{ marginLeft: "5%" }}>
                                             <p className="m-0">{result.user.name}</p>

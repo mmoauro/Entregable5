@@ -24,7 +24,7 @@ export class PublicidadComponent extends React.Component<any, any> {
                         return (
                             <>
                                 <div key={index} style={{border: "1px solid black", width: "75%", borderRadius: "20px", padding:"40px"}} className={"d-flex justify-content-center mt-5"}>
-                                    <img src={publicidad.img} width="100%" height="100%" style={{cursor: "pointer"}}/>
+                                    <img src={publicidad.img} alt="publicidad" width="100%" height="100%" style={{cursor: "pointer"}}/>
                                 </div>
                             </>
                         )

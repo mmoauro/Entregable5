@@ -1,5 +1,5 @@
 import { RecommendedUser } from "../RecommendedUser";
-import manuel1 from '../../assets/manuel1.webp';
+import manuel1 from '../../assets/manuel1.jpeg';
 import manuel2 from '../../assets/manuel2.jpeg';
 import manuel3 from '../../assets/manuel3.jpeg';
 import { SearchResultType } from "./SearchResultType";

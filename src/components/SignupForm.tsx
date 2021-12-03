@@ -40,10 +40,18 @@ export class SignupForm extends React.Component<Props, any> {
                         />
                     </Col>
                     <Col md="10" className={"mt-3"}>
-                        <label>Contraseña</label>
+                        <label>Contraseña (Debe contener minimo 8 caracteres y un numero)</label>
                         <input
                             type="password"
                             placeholder="Contraseña"
+                            style={{ border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px" }}
+                        />
+                    </Col>
+                    <Col md="10" className={"mt-3"}>
+                        <label>Confirmar contraseña</label>
+                        <input
+                            type="password"
+                            placeholder="Confirmar contraseña"
                             style={{ border: '1px solid grey', borderRadius: '10px', width: "100%", height: "40px" }}
                         />
                     </Col>
