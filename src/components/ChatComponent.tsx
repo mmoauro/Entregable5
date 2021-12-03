@@ -27,7 +27,7 @@ export class ChatComponent extends React.Component<Props, any> {
                     <img src={this.props.chat.user.img} alt="user" style={{width: "100px", height:"100px", borderRadius:"50px"}} />
                     <h3 style={{marginLeft: "20px"}}>{this.props.chat.user.name}</h3>
                 </div>
-                <div style={{paddingLeft: "20px", overflow:"scroll", maxHeight:"550px"}}>
+                <div style={{paddingLeft: "20px", overflow:"scroll", maxHeight:"500px"}}>
                    {this.props.chat.messages.map((message, index) => {
                        return (
                            <>
