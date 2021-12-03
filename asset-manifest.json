@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Entregable5/static/css/main.bde2cb8d.chunk.css",
-    "main.js": "/Entregable5/static/js/main.bc46fd16.chunk.js",
-    "main.js.map": "/Entregable5/static/js/main.bc46fd16.chunk.js.map",
+    "main.js": "/Entregable5/static/js/main.7c228d6b.chunk.js",
+    "main.js.map": "/Entregable5/static/js/main.7c228d6b.chunk.js.map",
     "runtime-main.js": "/Entregable5/static/js/runtime-main.afc50b05.js",
     "runtime-main.js.map": "/Entregable5/static/js/runtime-main.afc50b05.js.map",
     "static/css/2.383c0125.chunk.css": "/Entregable5/static/css/2.383c0125.chunk.css",
@@ -28,7 +28,7 @@
     "static/media/juan.3d7bab97.jpeg": "/Entregable5/static/media/juan.3d7bab97.jpeg",
     "static/media/location.d2e588c5.png": "/Entregable5/static/media/location.d2e588c5.png",
     "static/media/lupa.23b6707c.png": "/Entregable5/static/media/lupa.23b6707c.png",
-    "static/media/manuel1.9e2872ea.webp": "/Entregable5/static/media/manuel1.9e2872ea.webp",
+    "static/media/manuel1.e411d766.jpeg": "/Entregable5/static/media/manuel1.e411d766.jpeg",
     "static/media/manuel2.5332201e.jpeg": "/Entregable5/static/media/manuel2.5332201e.jpeg",
     "static/media/manuel3.e7b1e755.jpeg": "/Entregable5/static/media/manuel3.e7b1e755.jpeg",
     "static/media/patitas.d775a074.jpeg": "/Entregable5/static/media/patitas.d775a074.jpeg",
@@ -44,6 +44,6 @@
     "static/css/2.383c0125.chunk.css",
     "static/js/2.b0bd26b2.chunk.js",
     "static/css/main.bde2cb8d.chunk.css",
-    "static/js/main.bc46fd16.chunk.js"
+    "static/js/main.7c228d6b.chunk.js"
   ]
 }
