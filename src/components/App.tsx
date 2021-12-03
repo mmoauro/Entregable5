@@ -6,7 +6,7 @@ import { Home } from "./Home";
 import { Navbar } from "./Navbar";
 import { ChatsListComponent } from './ChatsListComponent';
 import { Spinner } from '../components/utils/Spinner';
-
+import '../css/styles.css';
 
 function App() {
     const [showSpinner, setShowSpinner] = useState<boolean>(true);

@@ -4,6 +4,8 @@ import comment from '../assets/icons/comment.png';
 import {Button} from "react-bootstrap";
 import {LikeIcon} from "./LikeIcon";
 import {CommentComponent} from "./CommentComponent";
+import { CreatePostComponent } from "./CreatePostComponent";
+import add from '../assets/icons/add.png';
 
 interface State {
     posts: Post[];
@@ -52,11 +54,19 @@ export class LastPostsComponent extends React.Component<any, State> {
             <>
                 <div className={"d-flex justify-content-center mt-5"}>
                     <div>
-                        <h5 className={"text-center"}>Ultimas publicaciones</h5>
+                        <CreatePostComponent/>
+                        <h5 className={"text-center ocultado"}>Ultimas publicaciones</h5>
+                        <div className="d-flex justify-content-end align-items-center mt-2 mobile">
+                            <p className="m-0" style={{color: "#858585"}}>Agregar publicacion</p>
+                            <div style={{backgroundColor:"#D42DD8", opacity:"50%", width:"30px", height:"30px", marginLeft: "5px"}} className="d-flex justify-content-center align-items-center">
+                                <img src={add} height={"15px"} width={"15px"} />
+                            </div>
+                        </div>
                         {this.state.posts.map((post, index) => {
                             return (
                                 <>
                                     <div className={"mt-5"}
+                                        key={index}
                                          style={{border: "1px solid black", borderRadius: "10px", padding: "20px"}}>
                                         <div className={"d-flex align-items-center"}>
                                             <img src={post.postCreator.img} height={"50px"} width={"50px"}
@@ -69,10 +79,11 @@ export class LastPostsComponent extends React.Component<any, State> {
                                         }
 
                                         <div className={"d-flex justify-content-center mt-2"}>
-                                            {post.imgs.map((img, i) => {
+                                            {post.imgs.map((_img, i) => {
                                                 return (
                                                     <>
                                                         <div
+                                                            key={index}
                                                             className={"m-lg-1"}
                                                             style={{
                                                                 width: "15px",
@@ -105,7 +116,7 @@ export class LastPostsComponent extends React.Component<any, State> {
 
                                         {post.comments.map((comment, i) => {
                                             return (
-                                                <CommentComponent comment={comment}/>
+                                                <CommentComponent key={index} comment={comment}/>
                                             )
                                         })}
                                         <div className={"d-flex align-items-center"} style={{width: "100%"}}>

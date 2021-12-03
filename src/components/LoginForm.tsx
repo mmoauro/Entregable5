@@ -26,7 +26,7 @@ export class LoginForm extends React.Component<Props, State> {
         }, 500);
         this.props.toggleNavbar(false);
     }
-
+    
     render() {
         return (
                 !this.props.showingSpinner &&
@@ -36,7 +36,7 @@ export class LoginForm extends React.Component<Props, State> {
                                 <Col md="6">
                                     <div className={"text-center"}>
                                         <h1 style={{ color: "#564E57" }}>Petbook</h1>
-                                        <img src={logo} width={"700px"} height={"500px"} />
+                                        <img className={"ocultado"} src={logo} width={"700px"} height={"500px"} />
 
                                     </div>
                                 </Col>
@@ -45,7 +45,7 @@ export class LoginForm extends React.Component<Props, State> {
                                         <Row className="d-flex justify-content-center">
                                             <Col md="10" className={"mt-3"}>
                                                 <label style={{ position: "relative", top: "40px" }}>Correo electronico</label>
-                                                <img src={inputDog} height={"100px"}
+                                                <img className={"input-dog"} src={inputDog} height={"100px"}
                                                     style={{ position: "relative", left: "450px", top: "15px" }} />
                                                 <input
                                                     type="text"

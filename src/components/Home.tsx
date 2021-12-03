@@ -26,7 +26,7 @@ export class Home extends React.Component<Props, any> {
             !this.props.showingSpinner &&
 
             <>
-                <Row>
+                <Row className="home">
                     <Col md={3}>
                         <PublicidadComponent />
                     </Col>
