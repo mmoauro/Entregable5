@@ -95,7 +95,7 @@ export class LoginForm extends React.Component<Props, State> {
                             </Row>
 
                         </div>
-                        <Modal size={"lg"} show={this.state.showSignupModal}>
+                        <Modal size={"lg"} show={this.state.showSignupModal} centered>
                             <div className={"d-flex justify-content-end"} style={{ width: "100%" }}>
                                 <p style={{ cursor: "pointer", marginRight: "20px" }}
                                     onClick={() => this.setState({ showSignupModal: false })}>X</p>
